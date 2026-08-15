@@ -1,130 +1,1014 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html data-theme="dark" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dave B. Lausa | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dave B. Lausa | IT Portfolio</title>
+<meta content="Dave B. Lausa, a Computer Science student and full-stack developer building Flutter mobile apps, systems, and tools. Explore projects like a Visitor Management System, GoalSave, AdShield, and more." name="description"/>
+<meta content="Dave B. Lausa" name="author"/>
+<!-- Favicon -->
+<link href="avatar.png" rel="icon" type="image/png"/>
+<link href="avatar.png" rel="apple-touch-icon"/>
+<!-- Open Graph / social preview -->
+<meta content="website" property="og:type"/>
+<meta content="Dave B. Lausa | IT Portfolio" property="og:title"/>
+<meta content="Computer Science student and full-stack developer, Flutter apps, systems, and tools built with purpose." property="og:description"/>
+<meta content="avatar.png" property="og:image"/>
+<!-- Twitter card -->
+<meta content="summary" name="twitter:card"/>
+<meta content="Dave B. Lausa | IT Portfolio" name="twitter:title"/>
+<meta content="Computer Science student and full-stack developer, Flutter apps, systems, and tools built with purpose." name="twitter:description"/>
+<meta content="avatar.png" name="twitter:image"/>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
-<div class="container">
-
-    <aside class="sidebar">
-
-        <div class="profile">
-            <!-- Replace profile.jpg with your own picture -->
-            <img src="profile.jpg" alt="Dave B. Lausa">
-
-            <h1>Dave B. Lausa</h1>
-            <p>Bachelor of Science in Computer Science</p>
-        </div>
-
-        <div class="info">
-            <h3>Contact</h3>
-
-            <p> davelausa123@gmail.com</p>
-            <p>09782628288</p>
-            <p> Tangub City, Philippines</p>
-        </div>
-
-        <div class="skills">
-
-            <h3>Skills</h3>
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>C++</span>
-            <span>Flutter</span>
-            <span>Dart</span>
-
-        </div>
-
-    </aside>
-
-    <main class="content">
-
-        <section class="card">
-
-            <h2>About Me</h2>
-
-            <p>
-                Hello! I'm <strong>Dave B. Lausa</strong>, a Bachelor of Science
-                in Computer Science (BSCS) student who enjoys building websites,
-                software applications, and solving programming problems. I love
-                learning new technologies and creating simple, user-friendly,
-                and efficient systems.
-            </p>
-
-        </section>
-
-        <section class="card">
-
-            <h2>Education</h2>
-
-            <div class="item">
-                <h4>Tangub City Global College</h4>
-                <p>Bachelor of Science in Computer Science (BSCS)</p>
-            </div>
-
-            <div class="item">
-                <h4>Tangub City National High School</h4>
-                <p>Senior High School Graduate</p>
-            </div>
-
-            <div class="item">
-                <h4>Tangub City Central School</h4>
-                <p>Elementary Graduate</p>
-            </div>
-
-        </section>
-
-        <section class="card">
-
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h4>Student Plotting System</h4>
-                <p>
-                    A web-based scheduling system for managing faculty, rooms,
-                    sections, and class schedules.
-                </p>
-            </div>
-
-            <div class="project">
-                <h4>Portfolio Website</h4>
-                <p>
-                    A responsive personal portfolio built using only HTML and CSS.
-                </p>
-            </div>
-
-            <div class="project">
-                <h4>Python Console Projects</h4>
-                <p>
-                    Console applications that improve programming and
-                    problem-solving skills.
-                </p>
-            </div>
-
-        </section>
-
-        <section class="card">
-
-            <h2>Certificate</h2>
-
-            <p>✔ HTML Tutorial Certificate</p>
-
-        </section>
-
-    </main>
-
+<!-- Cursor spotlight glow that follows the mouse -->
+<!-- Scroll progress bar -->
+<!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+<div class="container"><input class="nav-toggle-input" id="navToggle" type="checkbox"/>
+<a class="navbar-brand" href="#hero">
+<span class="brand-dot"></span>Dave<span class="brand-accent">.</span>
+</a>
+<div class="d-flex align-items-center gap-3 ms-auto">
+<label aria-label="Toggle navigation" class="navbar-toggler" for="navToggle"><span class="toggler-icon"></span><span class="toggler-icon"></span><span class="toggler-icon"></span></label>
 </div>
-
-<footer>
-    © 2026 Dave B. Lausa | BS Computer Science Student
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto gap-1">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- ═══════════════════════════════════ HERO ══════════════════════════════════ -->
+<section class="hero-section" id="hero">
+<div class="hero-bg-grid"></div>
+<div class="hero-orb orb-1"></div>
+<div class="hero-orb orb-2"></div>
+<div class="hero-orb orb-3"></div>
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-lg-7 hero-content">
+<span class="hero-eyebrow">
+<span class="eyebrow-dot"></span> Available for Opportunities
+          </span>
+<h1 class="hero-title">
+            Hi, I'm<br/>
+<span class="hero-name" id="heroName">Dave B. Lausa</span>
+</h1>
+<p class="hero-sub">
+<span class="typed-wrapper">
+<span id="typed">Full-Stack Developer &amp; Mobile App Builder</span><span class="cursor-blink">|</span>
+</span>
+</p>
+<p class="hero-desc">
+            Computer Science student at Tangub City Global College, crafting software that matters, from mobile apps to intelligent systems.
+          </p>
+<div class="hero-actions d-flex flex-wrap gap-3">
+<a class="btn btn-primary-glow" href="#projects">
+              View My Work <i class="bi bi-arrow-right ms-2"></i>
+</a>
+<a class="btn btn-ghost" href="#contact">
+              Get In Touch
+            </a>
+<a class="btn btn-ghost" download="" href="assets/resume.pdf">
+<i class="bi bi-download me-2"></i>Resume
+            </a>
+</div>
+<div class="hero-stats d-flex gap-4 mt-5">
+<div class="stat-item">
+<span class="stat-num">11+</span>
+<span class="stat-label">Projects</span>
+</div>
+<div class="stat-divider"></div>
+<div class="stat-item">
+<span class="stat-num">9</span>
+<span class="stat-label">Tech Skills</span>
+</div>
+<div class="stat-divider"></div>
+<div class="stat-item">
+<span class="stat-num">∞</span>
+<span class="stat-label">Curiosity</span>
+</div>
+</div>
+</div>
+<div class="col-lg-5 d-flex justify-content-center mt-5 mt-lg-0">
+<div class="hero-card-wrap" id="heroCard">
+<div class="hero-card">
+<div class="card-shine"></div>
+<div class="card-avatar-ring">
+<img alt="Dave B. Lausa" class="card-avatar" id="avatarImg" src="avatar.png"/>
+</div>
+<div class="card-info">
+<h3>Dave B. Lausa</h3>
+<p>Computer Science Student</p>
+<div class="card-badges d-flex flex-wrap gap-2 justify-content-center">
+<span class="badge-tech">Python</span>
+<span class="badge-tech">Flutter</span>
+<span class="badge-tech">JS</span>
+<span class="badge-tech">PHP</span>
+</div>
+</div>
+<div class="card-status">
+<span class="status-pulse"></span> Open to work
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hero-scroll-hint">
+<div class="scroll-mouse">
+<div class="scroll-wheel"></div>
+</div>
+<span>Scroll</span>
+</div>
+</section>
+<!-- ═══════════════════════════════════ ABOUT ══════════════════════════════════ -->
+<section class="section-pad" id="about">
+<div class="container">
+<div class="section-label">About Me</div>
+<div class="row align-items-center g-5">
+<div class="col-lg-5">
+<div class="about-visual">
+<div class="av-frame">
+<img alt="Dave B. Lausa" class="about-photo" id="aboutPhoto" src="avatar.png"/>
+<div class="av-decoration av-deco-1"></div>
+<div class="av-decoration av-deco-2"></div>
+</div>
+<div class="av-card glass-card">
+<span style="width:38px;height:38px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.06);">
+<img alt="TCGC" src="assets/icons/tcgc.png" style="width:30px;height:30px;object-fit:contain;"/>
+</span>
+<div>
+<strong>Tangub City Global College</strong>
+<span>BS Computer Science</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-7">
+<h2 class="section-title">Passionate about <span class="text-accent">building</span> things that matter</h2>
+<p class="section-text">
+            Hello! I'm Dave B. Lausa, a BS Computer Science student passionate about software development. I enjoy building mobile apps, web applications, and systems that solve real-world problems.
+          </p>
+<p class="section-text">
+            I am continuously improving my skills in programming and exploring modern technologies, whether that's crafting smooth UI experiences, architecting scalable backends, or experimenting with AI-driven features.
+          </p>
+<div class="about-highlights row g-3 mt-2">
+<div class="col-sm-6">
+<div class="highlight-card glass-card">
+<i class="bi bi-phone-fill text-cyan"></i>
+<div>
+<strong>Mobile Dev</strong>
+<span>Flutter &amp; Dart</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="highlight-card glass-card">
+<i class="bi bi-globe2 text-violet"></i>
+<div>
+<strong>Web Dev</strong>
+<span>HTML / CSS / JS / PHP</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="highlight-card glass-card">
+<i class="bi bi-database-fill text-pink"></i>
+<div>
+<strong>Databases</strong>
+<span>MySQL · SQLite · Firebase</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="highlight-card glass-card">
+<i class="bi bi-cpu-fill text-cyan"></i>
+<div>
+<strong>Problem Solver</strong>
+<span>Algorithms &amp; Systems</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════════════════ SKILLS ══════════════════════════════════ -->
+<section class="section-pad section-alt" id="skills">
+<div class="container">
+<div class="section-label text-center">Skills</div>
+<h2 class="section-title text-center">My <span class="text-accent">Tech Stack</span></h2>
+<p class="section-text text-center mx-auto mb-5" style="max-width:560px">
+        Technologies I use to build real-world solutions, spanning frontend, backend, mobile, and databases.
+      </p>
+<div class="skills-orbit">
+<div class="row g-4 justify-content-center">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+<div class="skill-card" data-skill="Flutter">
+<div class="skill-icon">
+<svg height="42" viewbox="0 0 128 128"><path d="M12.3 64.2L76.3 0h39.4L32.1 83.6z" fill="#3FB6D3"></path><path d="M76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z" fill="#27AACD"></path><path d="M81.6 93.9l-20-20-19.4 19.6 19.4 34.5z" fill="#19599A"></path><path d="M42.2 93.5l19.4 19.6 20-19.2-19.4-19.6z" fill="#1CB8D3"></path></svg>
+</div>
+<span>Flutter</span>
+<div class="skill-count">Used in 7 projects</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+<div class="skill-card" data-skill="SQLite">
+<div class="skill-icon">
+<svg fill="#003B57" height="42" viewbox="0 0 24 24"><path d="M21.678.521c-1.032-.92-2.28-.55-3.513.544a8.71 8.71 0 0 0-.547.535c-2.109 2.237-4.066 6.38-4.674 9.544.237.48.422 1.093.544 1.561a13.044 13.044 0 0 1 .164.703s-.019-.071-.096-.296l-.05-.146a1.689 1.689 0 0 0-.033-.08c-.138-.32-.518-.995-.686-1.289-.143.423-.27.818-.376 1.176.484.884.778 2.4.778 2.4s-.025-.099-.147-.442c-.107-.303-.644-1.244-.772-1.464-.217.804-.304 1.346-.226 1.478.152.256.296.698.422 1.186.286 1.1.485 2.44.485 2.44l.017.224a22.41 22.41 0 0 0 .056 2.748c.095 1.146.273 2.13.5 2.657l.155-.084c-.334-1.038-.47-2.399-.41-3.967.09-2.398.642-5.29 1.661-8.304 1.723-4.55 4.113-8.201 6.3-9.945-1.993 1.8-4.692 7.63-5.5 9.788-.904 2.416-1.545 4.684-1.931 6.857.666-2.037 2.821-2.912 2.821-2.912s1.057-1.304 2.292-3.166c-.74.169-1.955.458-2.362.629-.6.251-.762.337-.762.337s1.945-1.184 3.613-1.72C21.695 7.9 24.195 2.767 21.678.521m-18.573.543A1.842 1.842 0 0 0 1.27 2.9v16.608a1.84 1.84 0 0 0 1.835 1.834h9.418a22.953 22.953 0 0 1-.052-2.707c-.006-.062-.011-.141-.016-.2a27.01 27.01 0 0 0-.473-2.378c-.121-.47-.275-.898-.369-1.057-.116-.197-.098-.31-.097-.432 0-.12.015-.245.037-.386a9.98 9.98 0 0 1 .234-1.045l.217-.028c-.017-.035-.014-.065-.031-.097l-.041-.381a32.8 32.8 0 0 1 .382-1.194l.2-.019c-.008-.016-.01-.038-.018-.053l-.043-.316c.63-3.28 2.587-7.443 4.8-9.791.066-.069.133-.128.198-.194Z"></path></svg>
+</div>
+<span>SQLite</span>
+<div class="skill-count">Used in 3 projects</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+<div class="skill-card" data-skill="HTML">
+<div class="skill-icon">
+<svg height="42" viewbox="0 0 128 128"><path d="M19.037 113.876L9.032 1.999h109.936l-10.016 111.877-45.019 12.48z" fill="#E44D26"></path><path d="M64 116.8l36.378-10.086 8.559-95.878H64z" fill="#F16529"></path><path d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z" fill="#EBEBEB"></path><path d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z" fill="#fff"></path></svg>
+</div>
+<span>HTML</span>
+<div class="skill-count">Built this site</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+<div class="skill-card" data-skill="CSS">
+<div class="skill-icon">
+<svg height="42" viewbox="0 0 128 128"><path d="M19.037 113.876L9.032 1.999h109.936l-10.016 111.877-45.019 12.48z" fill="#1572B6"></path><path d="M64 116.8l36.378-10.086 8.559-95.878H64z" fill="#33A9DC"></path><path d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z" fill="#fff"></path><path d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z" fill="#EBEBEB"></path></svg>
+</div>
+<span>CSS</span>
+<div class="skill-count">Built this site</div>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+<div class="skill-card" data-skill="JavaScript">
+<div class="skill-icon">
+<svg height="42" viewbox="0 0 128 128"><path d="M1.408 1.408h125.184v125.185H1.408z" fill="#F0DB4F"></path><path d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z" fill="#323330"></path></svg>
+</div>
+<span>JavaScript</span>
+<div class="skill-count">Built this site</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center skills-divider-label">Also working with</p>
+<div class="also-skills">
+<span class="badge-tech"><svg height="16" viewbox="0 0 128 128"><path d="M49.33 62h29.17C86.65 62 93 55.82 93 47.85V27.3C93 19.58 86.32 13 76.99 11.76c-3.4-.47-6.96-.76-10.99-.76-4.03 0-7.47.29-10.96.76C45.71 13 35 19.02 35 27.3v13h29v4H23.49C15.23 44.3 7 51.3 7 64.03c0 12.74 7.5 19.7 16.49 19.7H35v-15c0-8.35 6.49-15.73 14.33-16.73zM64 18.5c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6z" fill="#3572A5"></path><path d="M78.67 66H49.5C41.35 66 35 72.18 35 80.15v20.55C35 108.42 41.68 115 50.99 116.24c3.4.47 6.96.76 10.99.76 4.03 0 7.47-.29 10.96-.76C82.29 115 93 108.98 93 100.7V87.7H64v-4h29.49C101.77 83.7 121 76.7 121 63.97c0-12.74-7.5-19.7-16.49-19.7H93v15c0 8.35-6.49 15.73-14.33 16.73zM64 109.5c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" fill="#FFD43B"></path></svg> Python</span>
+<span class="badge-tech"><svg fill="#3178C6" height="14" viewbox="0 0 24 24"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"></path></svg> TypeScript</span>
+<span class="badge-tech"><svg fill="#777BB4" height="14" viewbox="0 0 24 24"><path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"></path></svg> PHP</span>
+<span class="badge-tech"><svg fill="#4479A1" height="14" viewbox="0 0 24 24"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z"></path></svg> MySQL</span>
+<span class="badge-tech"><svg fill="#DD2C00" height="14" viewbox="0 0 24 24"><path d="M19.455 8.369c-.538-.748-1.778-2.285-3.681-4.569-.826-.991-1.535-1.832-1.884-2.245a146 146 0 0 0-.488-.576l-.207-.245-.113-.133-.022-.032-.01-.005L12.57 0l-.609.488c-1.555 1.246-2.828 2.851-3.681 4.64-.523 1.064-.864 2.105-1.043 3.176-.047.241-.088.489-.121.738-.209-.017-.421-.028-.632-.033-.018-.001-.035-.002-.059-.003a7.46 7.46 0 0 0-2.28.274l-.317.089-.163.286c-.765 1.342-1.198 2.869-1.252 4.416-.07 2.01.477 3.954 1.583 5.625 1.082 1.633 2.61 2.882 4.42 3.611l.236.095.071.025.003-.001a9.59 9.59 0 0 0 2.941.568q.171.006.342.006c1.273 0 2.513-.249 3.69-.742l.008.004.313-.145a9.63 9.63 0 0 0 3.927-3.335c1.01-1.49 1.577-3.234 1.641-5.042.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695c.328 1.244.264 2.44-.191 3.558-1.135-1.12-1.967-2.352-2.475-3.665-.543-1.404-.87-2.74-.974-3.975.48.157.922.366 1.315.622 1.132.737 1.914 1.902 2.325 3.461zm.207 6.022c.482.368.99.712 1.513 1.028-.771.21-1.565.302-2.369.273a8 8 0 0 1-.373-.022c.458-.394.869-.823 1.228-1.279zm1.347-6.431c-.516-1.957-1.527-3.437-3.002-4.398-.647-.421-1.385-.741-2.194-.95.011-.134.026-.268.043-.4.014-.113.03-.216.046-.313.133-.689.332-1.37.589-2.025.099-.25.206-.499.321-.74l.004-.008c.177-.358.376-.719.61-1.105l.092-.152-.003-.001c.544-.851 1.197-1.627 1.942-2.311l.288.341c.672.796 1.304 1.548 1.878 2.237 1.291 1.549 2.966 3.583 3.612 4.48 1.277 1.771 1.893 3.579 1.83 5.375-.049 1.395-.461 2.755-1.195 3.933-.694 1.116-1.661 2.05-2.8 2.708-.636-.318-1.559-.839-2.539-1.599.79-1.575.952-3.28.479-5.072zm-2.575 5.397c-.725.939-1.587 1.55-2.09 1.856-.081-.029-.163-.06-.243-.093l-.065-.026c-1.49-.616-2.747-1.656-3.635-3.01-.907-1.384-1.356-2.993-1.298-4.653.041-1.19.338-2.327.882-3.379.316-.07.638-.114.96-.131l.084-.002c.162-.003.324-.003.478 0 .227.011.454.035.677.07.073 1.513.445 3.145 1.105 4.852.637 1.644 1.694 3.162 3.144 4.515z"></path></svg> Firebase</span>
+<span class="badge-tech"><img alt="" src="assets/icons/canva.webp" style="width:14px;height:14px;border-radius:3px;object-fit:cover;vertical-align:-2px;"/> Canva</span>
+<span class="badge-tech"><img alt="" src="assets/icons/figma.webp" style="width:14px;height:14px;border-radius:3px;object-fit:cover;vertical-align:-2px;"/> Figma</span>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<section class="section-pad" id="projects">
+<div class="container">
+<div class="section-label text-center">Projects</div>
+<h2 class="section-title text-center">Things I've <span class="text-accent">Built</span></h2>
+<p class="section-text text-center mx-auto mb-5" style="max-width:560px">
+        A selection of projects built with purpose, each solving a real problem.
+      </p>
+<div class="projects-carousel-wrap"><input checked="" class="proj-radio" id="proj-r0" name="projNav" type="radio"/><input class="proj-radio" id="proj-r1" name="projNav" type="radio"/><input class="proj-radio" id="proj-r2" name="projNav" type="radio"/><input class="proj-radio" id="proj-r3" name="projNav" type="radio"/><input class="proj-radio" id="proj-r4" name="projNav" type="radio"/><input class="proj-radio" id="proj-r5" name="projNav" type="radio"/><input class="proj-radio" id="proj-r6" name="projNav" type="radio"/><input class="proj-radio" id="proj-r7" name="projNav" type="radio"/><input class="proj-radio" id="proj-r8" name="projNav" type="radio"/><input class="proj-radio" id="proj-r9" name="projNav" type="radio"/><input class="proj-radio" id="proj-r10" name="projNav" type="radio"/><input class="proj-radio" id="proj-r11" name="projNav" type="radio"/><input class="proj-radio" id="proj-r12" name="projNav" type="radio"/><input class="proj-radio" id="proj-r13" name="projNav" type="radio"/><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="1" for="proj-r0"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="2" for="proj-r1"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="3" for="proj-r2"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="4" for="proj-r3"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="5" for="proj-r4"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="6" for="proj-r5"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="7" for="proj-r6"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="8" for="proj-r7"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="9" for="proj-r8"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="10" for="proj-r9"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="11" for="proj-r10"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="12" for="proj-r11"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll left" class="projects-arrow projects-arrow-left proj-prev" data-show-at="13" for="proj-r12"><i class="bi bi-chevron-left"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="0" for="proj-r1"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="1" for="proj-r2"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="2" for="proj-r3"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="3" for="proj-r4"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="4" for="proj-r5"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="5" for="proj-r6"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="6" for="proj-r7"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="7" for="proj-r8"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="8" for="proj-r9"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="9" for="proj-r10"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="10" for="proj-r11"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="11" for="proj-r12"><i class="bi bi-chevron-right"></i></label><label aria-label="Scroll right" class="projects-arrow projects-arrow-right proj-next" data-show-at="12" for="proj-r13"><i class="bi bi-chevron-right"></i></label>
+<div class="projects-carousel projects-viewport" id="projectsCarousel">
+<div class="row g-4 projects-track" id="projectsTrack">
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of Prompt Engineering Learning Guide" class="pc-shots-link" href="#shot-prompt-engineering-learning-guide"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="Prompt Engineering Learning Guide overview page" class="pc-shot active pc-shot-contain" src="assets/shots/promptlab/1-overview.png"/></a>
+</div>
+<div class="pc-tag">PDF Guide</div>
+<div class="pc-icon">
+<i class="bi bi-file-earmark-pdf-fill"></i>
+</div>
+<h3>Prompt Engineering Learning Guide</h3>
+<p>A repository of structured PDF lesson guides covering prompt basics through advanced techniques like few-shot prompting and chain-of-thought.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Markdown</span><span>PDF</span><span>Documentation</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-prompt-engineering-learning-guide" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/Prompt-Engineering-Learning-Guide" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of Learning GitHub Guide" class="pc-shots-link" href="#shot-learning-github-guide"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="Learning GitHub Guide overview page" class="pc-shot active pc-shot-contain" src="assets/shots/githubguide/1-overview.png"/></a>
+</div>
+<div class="pc-tag">PDF Guide</div>
+<div class="pc-icon violet">
+<i class="bi bi-github"></i>
+</div>
+<h3>Learning GitHub Guide</h3>
+<p>A repository of structured PDF lesson guides covering Git and GitHub fundamentals, branching, pull requests, and GitHub Actions.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Markdown</span><span>PDF</span><span>Documentation</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-learning-github-guide" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/github-feature-demo" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of AI Code Assistant" class="pc-shots-link" href="#shot-ai-code-assistant"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="AI Code Assistant promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/codeassistant/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Mobile App</div>
+<div class="pc-icon">
+<i class="bi bi-terminal-fill"></i>
+</div>
+<h3>AI Code Assistant</h3>
+<p>A Flutter app powered by Gemini 2.0 Flash that debugs, explains, writes, and converts code through a terminal-style chat interface.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>Dart</span><span>Gemini API</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-ai-code-assistant" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/code-assistant" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of Claude Skills" class="pc-shots-link" href="#shot-claude-skills"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="Claude Skills promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/claudeskills/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Dev Tools</div>
+<div class="pc-icon violet">
+<i class="bi bi-stars"></i>
+</div>
+<h3>Claude Skills</h3>
+<p>Custom, reusable AI workflows and skills for Claude, covering coding, research, documentation, and automation tasks.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Markdown</span><span>Claude</span><span>Automation</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-claude-skills" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/claude-skills" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots featured">
+<div class="pc-shine"></div>
+<div class="pc-featured-badge">⭐ Featured</div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of Visitor Management System" class="pc-shots-link" href="#shot-visitor-management-system"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="Visitor Management System promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/vms/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Full-Stack</div>
+<div class="pc-icon">
+<i class="bi bi-shield-lock-fill"></i>
+</div>
+<h3>Visitor Management System</h3>
+<p>Built for Tangub City Global College, QR check-in, role-based admin/security access, blacklist control, and auto-generated visit certificates.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>Role-Based Auth</span><span>QR Codes</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-visitor-management-system" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/Visitor-Management-System" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of Smart Seat Planner" class="pc-shots-link" href="#shot-smart-seat-planner"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="SmartSeat Planner promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/smartseat/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Mobile App</div>
+<div class="pc-icon pink">
+<i class="bi bi-grid-3x3-gap-fill"></i>
+</div>
+<h3>Smart Seat Planner</h3>
+<p>Offline-first classroom companion for teachers, manages class rosters, seating arrangements, attendance, and flags at-risk students automatically.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>SQLite</span><span>Offline-First</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-smart-seat-planner" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/Smart-seat-planner" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of GoalSave" class="pc-shots-link" href="#shot-goalsave"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="GoalSave promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/goalsave/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Mobile App</div>
+<div class="pc-icon violet">
+<i class="bi bi-piggy-bank-fill"></i>
+</div>
+<h3>GoalSave</h3>
+<p>A savings-goal tracker that lets users set peso targets with deadlines, quick-save presets, and visual monthly progress charts.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>SQLite</span><span>Charts</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-goalsave" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/Savings-Goal" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of My Health Fitness" class="pc-shots-link" href="#shot-my-health-fitness"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="My Health Fitness promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/fitness/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Mobile App</div>
+<div class="pc-icon">
+<i class="bi bi-heart-pulse-fill"></i>
+</div>
+<h3>My Health Fitness</h3>
+<p>Fitness tracker with activity rings, step/distance/calorie logging, workout history, and BMI-based profile stats.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>Charts</span><span>Local Storage</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-my-health-fitness" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/My-Health-Fitness" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of OJT Time Tracker" class="pc-shots-link" href="#shot-ojt-time-tracker"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="OJT Time Tracker promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/ojt/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Mobile App</div>
+<div class="pc-icon pink">
+<i class="bi bi-stopwatch-fill"></i>
+</div>
+<h3>OJT Time Tracker</h3>
+<p>Logs time-in/time-out sessions toward a required OJT hour quota, with a live completion ring and session history.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>SQLite</span><span>Timer</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-ojt-time-tracker" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/Ojt-Tracker" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of AdShield" class="pc-shots-link" href="#shot-adshield"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="AdShield promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/adshield/0-cover.jpg"/></a>
+</div>
+<div class="pc-tag">Web Tool</div>
+<div class="pc-icon violet">
+<i class="bi bi-shield-fill-check"></i>
+</div>
+<h3>AdShield</h3>
+<p>System-wide ad and tracker blocker using a local VPN, blocks display ads, video ads, trackers, and social widgets across all apps.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>Local VPN</span><span>DNS Filtering</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-adshield" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/AdShield" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mx-auto">
+<div class="project-card tilt-card">
+<div class="pc-shine"></div>
+<div class="pc-tag">Mobile App</div>
+<div class="pc-icon">
+<i class="bi bi-robot"></i>
+</div>
+<h3>AI Writing Assistant</h3>
+<p>A Flutter app that calls the Claude API to rewrite AI-sounding or robotic text into natural, human-like writing.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Flutter</span><span>Claude API</span><span>Dart</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-ai-writing-assistant" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/Ai-Assistant" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of YouTube Ad Blocker" class="pc-shots-link" href="#shot-youtube-ad-blocker"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="YouTube Ad Blocker promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/ytadblocker/0-cover.png"/></a>
+</div>
+<div class="pc-tag">Chrome Extension</div>
+<div class="pc-icon pink">
+<i class="bi bi-youtube"></i>
+</div>
+<h3>YouTube Ad Blocker</h3>
+<p>A lightweight Chrome extension that automatically blocks YouTube ads for a cleaner, uninterrupted viewing experience.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>HTML</span><span>CSS</span><span>JavaScript</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-youtube-ad-blocker" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/YouTube-Adds-Blocker" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of File Processing API" class="pc-shots-link" href="#shot-file-processing-api"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="File Processing API promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/fileapi/0-cover.png"/></a>
+</div>
+<div class="pc-tag">REST API</div>
+<div class="pc-icon">
+<i class="bi bi-file-earmark-arrow-up-fill"></i>
+</div>
+<h3>File Processing API</h3>
+<p>A RESTful API for uploading, converting, and extracting data from files, returning clean, structured JSON.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>Node.js</span><span>Express</span><span>PostgreSQL</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-file-processing-api" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/File-Processing-REST-API" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="project-card tilt-card has-shots">
+<div class="pc-shine"></div>
+<div class="pc-shots pc-shots-flyer">
+<a aria-label="View full screenshot of Invoice / Receipt Generator API" class="pc-shots-link" href="#shot-invoice-receipt-generator-api"><div class="pc-shots-expand"><i class="bi bi-arrows-angle-expand"></i></div><img alt="Invoice / Receipt Generator API promotional overview" class="pc-shot active pc-shot-contain" src="assets/shots/invoiceapi/0-cover.png"/></a>
+</div>
+<div class="pc-tag">REST API</div>
+<div class="pc-icon violet">
+<i class="bi bi-receipt"></i>
+</div>
+<h3>Invoice / Receipt Generator API</h3>
+<p>A lightweight PHP API that generates professional invoices and receipts in PDF format from a simple JSON request.</p>
+<div class="pc-tech d-flex flex-wrap gap-2 mt-2">
+<span>PHP</span><span>REST API</span><span>DOMPDF</span>
+</div>
+<div class="pc-footer d-flex justify-content-end align-items-center mt-3">
+<div class="pc-links">
+<a class="pc-link pc-details-btn" href="#modal-invoice-receipt-generator-api" title="View Project"><i class="bi bi-eye"></i></a>
+<a class="pc-link" href="https://github.com/Dave640-creator/Invoice-Receipt-Generator-API" rel="noopener" target="_blank" title="Source Code"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section class="section-pad section-alt contact-minimal" id="contact">
+<div class="container">
+<div class="row g-5 g-lg-4">
+<div class="col-lg-5">
+<div class="cm-label">Get in touch</div>
+<h2 class="cm-heading">Let's<br/>Connect.</h2>
+<p class="cm-lede">I'm open to collaborations, internships, and interesting projects.</p>
+<div class="cm-divider"></div>
+<ul class="cm-list">
+<li>
+<i class="bi bi-envelope"></i>
+<div>
+<span class="cm-list-label">Email</span>
+<a href="mailto:beloylausa@gmail.com">beloylausa@gmail.com</a>
+</div>
+</li>
+<li>
+<i class="bi bi-github"></i>
+<div>
+<span class="cm-list-label">GitHub</span>
+<a href="https://github.com/Dave640-creator" target="_blank">Dave640-creator</a>
+</div>
+</li>
+<li>
+<i class="bi bi-facebook"></i>
+<div>
+<span class="cm-list-label">Facebook</span>
+<a href="https://www.facebook.com/dave.lausa.96" target="_blank">dave.lausa.96</a>
+</div>
+</li>
+<li>
+<i class="bi bi-geo-alt"></i>
+<div>
+<span class="cm-list-label">Location</span>
+<span class="cm-static">Tangub City, Philippines</span>
+</div>
+</li>
+</ul>
+<div class="cm-availability">
+<span class="status-pulse"></span> Available for opportunities
+          </div>
+</div>
+<div class="col-lg-7">
+<div class="cm-form-label">Send a message</div>
+<p class="cm-form-lede">I'd love to hear from you.</p>
+<p class="cm-form-note">Submitting opens your email app with this message pre-filled, ready to send.</p>
+<form action="mailto:beloylausa@gmail.com" class="cm-form" enctype="text/plain" method="post">
+<div class="row g-4">
+<div class="col-sm-6">
+<div class="cm-field">
+<label>Name</label>
+<input id="cName" name="Name" placeholder="Your name" required="" type="text"/>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="cm-field">
+<label>Email</label>
+<input id="cEmail" name="Email" placeholder="your@email.com" required="" type="email"/>
+</div>
+</div>
+<div class="col-12">
+<div class="cm-field">
+<label>Subject</label>
+<input id="cSubject" name="Subject" placeholder="What's this about?" type="text"/>
+</div>
+</div>
+<div class="col-12">
+<div class="cm-field">
+<label>Message</label>
+<textarea id="cMessage" name="Message" placeholder="Tell me about your project or opportunity..." required="" rows="4"></textarea>
+</div>
+</div>
+<div class="col-12">
+<button class="cm-submit" id="sendBtn" type="submit">
+<span id="btnText">Send Message</span>
+<i class="bi bi-arrow-right ms-2"></i>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════════════════ FOOTER ════════════════════════════════ -->
+<footer class="site-footer">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-4">
+<span class="footer-brand">Dave<span class="brand-accent">.</span></span>
+</div>
+<div class="col-md-4 text-center">
+<p class="footer-copy">© 2026 Dave B. Lausa. Built with ❤️</p>
+</div>
+<div class="col-md-4 d-flex justify-content-md-end justify-content-center gap-3 mt-3 mt-md-0">
+<a class="footer-social" href="mailto:beloylausa@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+<a class="footer-social" href="https://github.com/Dave640-creator" target="_blank"><i class="bi bi-github"></i></a>
+<a class="footer-social" href="https://www.facebook.com/dave.lausa.96" target="_blank"><i class="bi bi-facebook"></i></a>
+</div>
+</div>
+</div>
 </footer>
-
+<!-- Back to top -->
+<a aria-label="Back to top" class="back-to-top" href="#hero" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+<!-- Screenshot lightbox -->
+<!-- Project details modal -->
+<!-- Bootstrap JS -->
+<!-- ═══════════ Screenshot lightboxes (CSS-only, no JS) ═══════════ -->
+<div class="lightbox-target" id="shot-prompt-engineering-learning-guide">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="Prompt Engineering Learning Guide overview page" class="lightbox-img" src="assets/shots/promptlab/1-overview.png"/>
+</div>
+<div class="lightbox-target" id="shot-learning-github-guide">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="Learning GitHub Guide overview page" class="lightbox-img" src="assets/shots/githubguide/1-overview.png"/>
+</div>
+<div class="lightbox-target" id="shot-ai-code-assistant">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="AI Code Assistant promotional overview" class="lightbox-img" src="assets/shots/codeassistant/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-claude-skills">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="Claude Skills promotional overview" class="lightbox-img" src="assets/shots/claudeskills/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-visitor-management-system">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="Visitor Management System promotional overview" class="lightbox-img" src="assets/shots/vms/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-smart-seat-planner">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="SmartSeat Planner promotional overview" class="lightbox-img" src="assets/shots/smartseat/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-goalsave">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="GoalSave promotional overview" class="lightbox-img" src="assets/shots/goalsave/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-my-health-fitness">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="My Health Fitness promotional overview" class="lightbox-img" src="assets/shots/fitness/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-ojt-time-tracker">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="OJT Time Tracker promotional overview" class="lightbox-img" src="assets/shots/ojt/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-adshield">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="AdShield promotional overview" class="lightbox-img" src="assets/shots/adshield/0-cover.jpg"/>
+</div>
+<div class="lightbox-target" id="shot-youtube-ad-blocker">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="YouTube Ad Blocker promotional overview" class="lightbox-img" src="assets/shots/ytadblocker/0-cover.png"/>
+</div>
+<div class="lightbox-target" id="shot-file-processing-api">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="File Processing API promotional overview" class="lightbox-img" src="assets/shots/fileapi/0-cover.png"/>
+</div>
+<div class="lightbox-target" id="shot-invoice-receipt-generator-api">
+<a aria-label="Close" class="lightbox-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<a aria-label="Close" class="lightbox-backdrop" href="#_"></a>
+<img alt="Invoice / Receipt Generator API promotional overview" class="lightbox-img" src="assets/shots/invoiceapi/0-cover.png"/>
+</div>
+<!-- ═══════════ Project detail panels (CSS-only, no JS) ═══════════ -->
+<div class="project-modal-target" id="modal-prompt-engineering-learning-guide">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-file-earmark-pdf-fill"></i></div>
+<h3 class="pm-title">Prompt Engineering Learning Guide</h3>
+<p class="pm-desc">A GitHub repository of structured PDF guides for learning prompt engineering, from the basics of writing a clear prompt to advanced techniques like few-shot prompting and chain-of-thought.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>8 downloadable PDF guides, from Prompt Basics to Real-world Examples</li><li>Covers the full prompt formula: Role, Context, Task, Constraints, Output</li><li>Dedicated lessons on Role Prompting, Few-shot Prompting, and Chain-of-Thought</li><li>Beginner → Intermediate → Advanced learning roadmap</li><li>Practical templates and real-world prompt examples included</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Markdown</span><span>PDF</span><span>Documentation</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-prompt-engineering-learning-guide"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/Prompt-Engineering-Learning-Guide" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-learning-github-guide">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-github"></i></div>
+<h3 class="pm-title">Learning GitHub Guide</h3>
+<p class="pm-desc">A GitHub repository of structured PDF guides covering everything from Git basics to GitHub Actions and open-source workflows, built as a self-paced learning library.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>8 downloadable PDF guides, from GitHub Fundamentals to the Open Source Guide</li><li>Covers repos, branching &amp; merging, pull requests, and GitHub Actions</li><li>Beginner → Intermediate → Advanced learning roadmap</li><li>Dedicated chapters on commits, collaboration, and GitHub Pages</li><li>Written for developers learning Git and GitHub from scratch</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Markdown</span><span>PDF</span><span>Documentation</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-learning-github-guide"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/github-feature-demo" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-ai-code-assistant">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-terminal-fill"></i></div>
+<h3 class="pm-title">AI Code Assistant</h3>
+<p class="pm-desc">An AI-powered coding companion built with Flutter and the Gemini 2.0 Flash API, ask coding questions, debug errors, generate code, and convert between languages, all in a dark terminal-inspired chat UI.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Chat-based coding assistant powered by Gemini 2.0 Flash</li><li>Debug &amp; fix, paste an error and get an explained fix</li><li>Write &amp; generate widgets, functions, and unit tests</li><li>Convert code between languages (e.g. Python → Dart)</li><li>API key stored locally on-device, nothing sent anywhere else</li><li>Dark, terminal-inspired chat interface</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>Dart</span><span>Gemini API</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-ai-code-assistant"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/code-assistant" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-claude-skills">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-stars"></i></div>
+<h3 class="pm-title">Claude Skills</h3>
+<p class="pm-desc">A collection of custom, reusable skills built for Claude, modular workflows covering coding, research, documentation, and automation to extend what Claude can do on repeated tasks.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Modular skill structure, coding, research, docs, and automation folders</li><li>Custom skills built via Claude's /skill-creator workflow (humanizer, programmer, ui-designer)</li><li>Reusable, write a skill once, use it across projects</li><li>Simple, developer-friendly file structure that's easy to extend</li><li>Open-source and shareable via GitHub</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Markdown</span><span>Claude</span><span>Automation</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-claude-skills"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/claude-skills" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-visitor-management-system">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-shield-lock-fill"></i></div>
+<h3 class="pm-title">Visitor Management System</h3>
+<p class="pm-desc">A complete visitor management platform built for Tangub City Global College, replacing manual logbooks with a digital, role-based system for admins and security staff.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>QR code check-in/check-out for fast, contactless logging</li><li>Role-based access, separate Admin and Security dashboards</li><li>Visitor blacklist system to flag repeat offenders</li><li>Auto-generated, verifiable Certificate of Visit</li><li>Visitor pre-registration form for guests before arrival</li><li>Real-time dashboard, total visitors, inside-campus count, pending approvals</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>Role-Based Auth</span><span>QR Codes</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-visitor-management-system"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/Visitor-Management-System" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-smart-seat-planner">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+<h3 class="pm-title">Smart Seat Planner</h3>
+<p class="pm-desc">An offline-first companion app for teachers to manage multiple classes without needing an internet connection, everything is stored locally on-device.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Manage multiple classes with section, room, and schedule details</li><li>Per-session attendance tracking</li><li>Configurable at-risk threshold that flags students after set absences</li><li>Class reports and analytics per section</li><li>100% offline, all data stored on-device via SQLite</li><li>Dark mode support</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>SQLite</span><span>Offline-First</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-smart-seat-planner"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/Smart-seat-planner" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-goalsave">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-piggy-bank-fill"></i></div>
+<h3 class="pm-title">GoalSave</h3>
+<p class="pm-desc">A personal savings tracker that helps users set peso-denominated goals with deadlines and visualize their progress over time.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Set savings goals with target amount and deadline</li><li>Quick-save presets (₱50, ₱100, ₱500) plus custom amounts</li><li>Daily saving streak tracker to build consistent habits</li><li>Monthly savings chart, last 6 months of activity</li><li>Full transaction history (money in, out, net savings)</li><li>Goal completion tracking (e.g. 5/7 goals done)</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>SQLite</span><span>Charts</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-goalsave"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/Savings-Goal" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-my-health-fitness">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+<h3 class="pm-title">My Health Fitness</h3>
+<p class="pm-desc">A fitness tracking app that logs workouts and daily activity, giving users a clear picture of their steps, distance, and calories burned.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Activity rings for steps, calories, and distance goals</li><li>Workout history filterable by type, running, cycling, walking</li><li>BMI calculator with height/weight-based status</li><li>All-time stats, total workouts, distance, steps, calories</li><li>Daily step goal tracking with progress bar</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>Charts</span><span>Local Storage</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-my-health-fitness"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/My-Health-Fitness" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-ojt-time-tracker">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-stopwatch-fill"></i></div>
+<h3 class="pm-title">OJT Time Tracker</h3>
+<p class="pm-desc">A simple time-logging app for OJT/internship students to track hours worked toward a required quota.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>One-tap Time In / Time Out logging</li><li>Live completion ring, hours done vs. hours required (e.g. 26.4h / 500h)</li><li>Full session history with per-day logs</li><li>Automatic duration calculation per session</li><li>Designed for offline, on-device use</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>SQLite</span><span>Timer</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-ojt-time-tracker"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/Ojt-Tracker" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-adshield">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-shield-fill-check"></i></div>
+<h3 class="pm-title">AdShield</h3>
+<p class="pm-desc">A system-wide ad and tracker blocker for Android that works across all apps using a local, on-device VPN, no external servers involved.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Blocks display ads, video ads (YouTube, TikTok, CapCut, and more), and social widgets</li><li>System-wide protection via local VPN, works across all installed apps</li><li>Tracker &amp; analytics blocking for privacy</li><li>Live stats, ads blocked, trackers blocked, domains filtered</li><li>Toggle individual blocking rules on/off</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>Local VPN</span><span>DNS Filtering</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-adshield"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/AdShield" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-ai-writing-assistant">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-robot"></i></div>
+<h3 class="pm-title">AI Writing Assistant</h3>
+<p class="pm-desc">A Flutter app that connects to the Claude API to rewrite AI-sounding or overly formal text into natural, human-sounding writing.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Paste any text and get a rewritten, more natural version</li><li>Powered by the Claude API for high-quality rewriting</li><li>Built for students and writers who want AI-assisted drafts to read naturally</li><li>Simple, distraction-free interface</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Flutter</span><span>Claude API</span><span>Dart</span></div>
+<div class="pm-actions">
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/Ai-Assistant" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-youtube-ad-blocker">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-youtube"></i></div>
+<h3 class="pm-title">YouTube Ad Blocker</h3>
+<p class="pm-desc">A lightweight Chrome extension that automatically blocks YouTube ads, video ads, banner ads, and sponsored overlays, for a cleaner, uninterrupted viewing experience.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Blocks YouTube video ads, banners, and sponsored overlays automatically</li><li>Fast &amp; lightweight, minimal code that runs smoothly in the background</li><li>One-click enable/disable through a clean popup interface</li><li>Privacy-focused, no data collection, viewing habits stay local</li><li>Seamless Chrome extension integration, works instantly after install</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-youtube-ad-blocker"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/YouTube-Adds-Blocker" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-file-processing-api">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-file-earmark-arrow-up-fill"></i></div>
+<h3 class="pm-title">File Processing API</h3>
+<p class="pm-desc">A RESTful API for fast, reliable file processing, upload, convert, and extract data from files (PDF, DOCX, XLSX, TXT) with just a few API calls, returning clean, structured JSON.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>File upload endpoint with secure handling</li><li>Format conversion between PDF, DOCX, XLSX, and TXT</li><li>Text extraction (OCR) from images and scanned documents</li><li>Clean, structured JSON response for every request</li><li>Easy integration, works with any platform that can call a REST API</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>Node.js</span><span>Express</span><span>PostgreSQL</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-file-processing-api"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/File-Processing-REST-API" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
+<div class="project-modal-target" id="modal-invoice-receipt-generator-api">
+<a aria-label="Close" class="project-modal-backdrop" href="#_"></a>
+<div class="project-modal-panel">
+<a aria-label="Close" class="project-modal-close" href="#_"><i class="bi bi-x-lg"></i></a>
+<div class="pm-icon"><i class="bi bi-receipt"></i></div>
+<h3 class="pm-title">Invoice / Receipt Generator API</h3>
+<p class="pm-desc">A lightweight PHP REST API that generates professional invoices and receipts in PDF format from JSON data, no database required, fully file-based.</p>
+<h4 class="pm-sub">Key Features</h4>
+<ul class="pm-features"><li>Generate invoices or receipts as PDF from a single JSON request</li><li>API key authentication to secure requests</li><li>Instant download, returns the finished PDF directly</li><li>Customizable business info, line items, totals, tax, and notes</li><li>No database needed, 100% file-based</li><li>Works with any language that can make HTTP requests</li></ul>
+<div class="pm-tech d-flex flex-wrap gap-2"><span>PHP</span><span>REST API</span><span>DOMPDF</span></div>
+<div class="pm-actions">
+<a class="btn-primary-glow pm-view-shots" href="#shot-invoice-receipt-generator-api"><i class="bi bi-images me-1"></i> View Screenshot</a>
+<a class="btn-ghost pm-github" href="https://github.com/Dave640-creator/Invoice-Receipt-Generator-API" rel="noopener" target="_blank"><i class="bi bi-github me-1"></i> View on GitHub</a>
+</div>
+</div>
+</div>
 </body>
 </html>
