@@ -1,56 +1,135 @@
-/* Navbar dropdown - styled to blend with the existing website */
+/* =========================================
+   NAVBAR DROPDOWN
+   ========================================= */
 
 .dropdown {
     position: relative;
 }
 
+
+/* =========================================
+   DROPDOWN BUTTON
+   ========================================= */
+
 .dropdown-btn {
     border: 0;
     background: transparent;
-    color: inherit;
-    font: inherit;
     cursor: pointer;
-    padding: 0;
+
+    font-family: var(--font-display);
+    font-size: .9rem;
+    font-weight: 500;
+
+    color: var(--text-muted) !important;
+
+    padding: 8px 14px !important;
+    border-radius: 8px;
+
+    transition: var(--transition);
 }
+
+.dropdown-btn:hover,
+.dropdown-btn.active {
+    color: var(--cyan) !important;
+    background: var(--cyan-dim);
+}
+
+
+/* =========================================
+   DROPDOWN MENU
+   ========================================= */
 
 .dropdown-menu {
     display: none;
+
     position: absolute;
     top: calc(100% + 10px);
     left: 50%;
     transform: translateX(-50%);
-    min-width: 220px;
+
+    min-width: 260px;
+
     padding: 8px;
     margin: 0;
+
     list-style: none;
-    background: rgba(20, 20, 25, 0.97);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+
+    /* Solid dark background */
+    background: #14141b;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.45),
+        0 0 20px rgba(0, 220, 255, 0.05);
+
+    z-index: 9999;
 }
+
+
+/* =========================================
+   SHOW DROPDOWN
+   ========================================= */
 
 .dropdown-menu.show {
     display: block;
 }
 
-.dropdown-menu li a {
-    display: block;
-    padding: 10px 14px;
-    border-radius: 7px;
-    color: #f1f1f1;
-    text-decoration: none;
-    white-space: nowrap;
+
+/* =========================================
+   DROPDOWN LINKS
+   ========================================= */
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
 }
 
-.dropdown-menu li a:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
+.dropdown-menu li a {
+    display: block;
+
+    padding: 12px 14px;
+
+    border-radius: 8px;
+
+    /* FIX: Explicit text color */
+    color: #e6e6e6 !important;
+
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
 }
+
+
+/* =========================================
+   HOVER EFFECT
+   ========================================= */
+
+.dropdown-menu li a:hover {
+    color: var(--cyan) !important;
+
+    background: var(--cyan-dim);
+}
+
+
+/* =========================================
+   DROPDOWN ARROW
+   ========================================= */
 
 .dropdown-arrow {
     display: inline-block;
+
     margin-left: 4px;
+
     transition: transform 0.2s ease;
 }
 
@@ -58,10 +137,18 @@
     transform: rotate(180deg);
 }
 
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
 @media (max-width: 600px) {
+
     .dropdown-menu {
         left: 0;
         transform: none;
-        min-width: 200px;
+
+        min-width: 220px;
     }
+
 }
