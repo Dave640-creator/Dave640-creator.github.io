@@ -17,6 +17,7 @@
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
 <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="dropdown.css">
 </head>
 <body>
 <!-- Cursor spotlight glow that follows the mouse -->
@@ -34,7 +35,16 @@
 <ul class="navbar-nav ms-auto gap-1">
 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><div class="dropdown">
+    <button id="dropdownBtn" class="dropdown-btn" type="button">
+        Projects <span class="dropdown-arrow">▼</span>
+    </button>
+    <ul id="dropdownMenu" class="dropdown-menu">
+        <li><a href="#projects">All Projects</a></li>
+        <li><a href="#projects">Visitor Management System</a></li>
+        <li><a href="#projects">Smart Seat Planner</a></li>
+    </ul>
+</div></li>
 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
 </div>
@@ -1000,5 +1010,6 @@
 </div>
 </div>
 </div>
+    <script src="dropdown.js"></script>
 </body>
 </html>
