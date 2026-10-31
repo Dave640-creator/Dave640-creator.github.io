@@ -5,7 +5,6 @@
 ═══════════════════════════════════════════════════════ */
 
 /* ── Fonts & Reset ── */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -163,13 +162,7 @@ a { text-decoration: none; color: inherit; }
   background: var(--cyan-dim);
 }
 
-/* Custom hamburger (CSS-only toggle, no JS) */
-.nav-toggle-input {
-  position: absolute;
-  opacity: 0;
-  width: 1px; height: 1px;
-  pointer-events: none;
-}
+/* Custom hamburger (toggled by React state) */
 .navbar-toggler {
   background: none;
   border: none;
@@ -186,7 +179,7 @@ a { text-decoration: none; color: inherit; }
   display: block;
 }
 .navbar-toggler:focus { box-shadow: none; }
-.nav-toggle-input:focus-visible ~ .navbar-toggler {
+.navbar-toggler:focus-visible {
   outline: 2px solid var(--cyan);
   outline-offset: 2px;
 }
@@ -194,16 +187,16 @@ a { text-decoration: none; color: inherit; }
 /* Mobile nav panel is shown purely via the checkbox's :checked state —
    the checkbox and #navMenu are sibling children of the same .container,
    so the general-sibling combinator can react without any JavaScript. */
-.nav-toggle-input:checked ~ #navMenu {
+#navMenu.open {
   display: block;
 }
-.nav-toggle-input:checked ~ .d-flex .navbar-toggler .toggler-icon:nth-child(1) {
+.navbar-toggler.open .toggler-icon:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
-.nav-toggle-input:checked ~ .d-flex .navbar-toggler .toggler-icon:nth-child(2) {
+.navbar-toggler.open .toggler-icon:nth-child(2) {
   opacity: 0;
 }
-.nav-toggle-input:checked ~ .d-flex .navbar-toggler .toggler-icon:nth-child(3) {
+.navbar-toggler.open .toggler-icon:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -1119,7 +1112,7 @@ a { text-decoration: none; color: inherit; }
 }
 .project-card.has-shots:hover .pc-shots-expand { opacity: 1; background: rgba(0,0,0,.65); }
 
-/* ── Lightbox (pure CSS, opened via :target — no JS) ── */
+/* ── Lightbox (shown when React adds .open) ── */
 .lightbox-target {
   position: fixed;
   inset: 0;
@@ -1132,7 +1125,7 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
   padding: 40px 20px;
 }
-.lightbox-target:target { display: flex; }
+.lightbox-target.open { display: flex; }
 .lightbox-backdrop {
   position: absolute;
   inset: 0;
@@ -1175,7 +1168,7 @@ a { text-decoration: none; color: inherit; }
   pointer-events: none;
 }
 
-/* ── Project details modal (pure CSS, opened via :target — no JS) ── */
+/* ── Project details modal (shown when React adds .open) ── */
 .project-modal-target {
   position: fixed;
   inset: 0;
@@ -1185,7 +1178,7 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
   padding: 30px 16px;
 }
-.project-modal-target:target { display: flex; }
+.project-modal-target.open { display: flex; }
 .project-modal-backdrop {
   position: absolute;
   inset: 0;
@@ -1278,22 +1271,13 @@ a { text-decoration: none; color: inherit; }
   .project-modal-panel { padding: 26px 20px; }
 }
 
-/* ── Projects paged carousel (pure CSS radio + :has(), no JS) ── */
+/* ── Projects paged carousel (position driven by React state) ── */
 .projects-carousel-wrap {
   position: relative;
   --proj-step: 304px; /* card width (280px) + column gutter (24px) */
 }
 @media (max-width: 576px) {
   .projects-carousel-wrap { --proj-step: 274px; }
-}
-.proj-radio {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  width: 1px; height: 1px;
-  pointer-events: none;
 }
 .projects-viewport {
   overflow: hidden;
@@ -1317,54 +1301,10 @@ a { text-decoration: none; color: inherit; }
   .projects-track > [class*="col-"] { flex-basis: 250px; max-width: 250px; width: 250px; }
 }
 
-/* Prev/next label-buttons: only the pair matching the active radio is shown */
-.proj-prev, .proj-next { display: none; }
-.projects-carousel-wrap:has(#proj-r1:checked)  .proj-prev[data-show-at="1"],
-.projects-carousel-wrap:has(#proj-r2:checked)  .proj-prev[data-show-at="2"],
-.projects-carousel-wrap:has(#proj-r3:checked)  .proj-prev[data-show-at="3"],
-.projects-carousel-wrap:has(#proj-r4:checked)  .proj-prev[data-show-at="4"],
-.projects-carousel-wrap:has(#proj-r5:checked)  .proj-prev[data-show-at="5"],
-.projects-carousel-wrap:has(#proj-r6:checked)  .proj-prev[data-show-at="6"],
-.projects-carousel-wrap:has(#proj-r7:checked)  .proj-prev[data-show-at="7"],
-.projects-carousel-wrap:has(#proj-r8:checked)  .proj-prev[data-show-at="8"],
-.projects-carousel-wrap:has(#proj-r9:checked)  .proj-prev[data-show-at="9"],
-.projects-carousel-wrap:has(#proj-r10:checked) .proj-prev[data-show-at="10"],
-.projects-carousel-wrap:has(#proj-r11:checked) .proj-prev[data-show-at="11"],
-.projects-carousel-wrap:has(#proj-r12:checked) .proj-prev[data-show-at="12"],
-.projects-carousel-wrap:has(#proj-r13:checked) .proj-prev[data-show-at="13"],
-.projects-carousel-wrap:has(#proj-r0:checked)  .proj-next[data-show-at="0"],
-.projects-carousel-wrap:has(#proj-r1:checked)  .proj-next[data-show-at="1"],
-.projects-carousel-wrap:has(#proj-r2:checked)  .proj-next[data-show-at="2"],
-.projects-carousel-wrap:has(#proj-r3:checked)  .proj-next[data-show-at="3"],
-.projects-carousel-wrap:has(#proj-r4:checked)  .proj-next[data-show-at="4"],
-.projects-carousel-wrap:has(#proj-r5:checked)  .proj-next[data-show-at="5"],
-.projects-carousel-wrap:has(#proj-r6:checked)  .proj-next[data-show-at="6"],
-.projects-carousel-wrap:has(#proj-r7:checked)  .proj-next[data-show-at="7"],
-.projects-carousel-wrap:has(#proj-r8:checked)  .proj-next[data-show-at="8"],
-.projects-carousel-wrap:has(#proj-r9:checked)  .proj-next[data-show-at="9"],
-.projects-carousel-wrap:has(#proj-r10:checked) .proj-next[data-show-at="10"],
-.projects-carousel-wrap:has(#proj-r11:checked) .proj-next[data-show-at="11"],
-.projects-carousel-wrap:has(#proj-r12:checked) .proj-next[data-show-at="12"] {
-  display: flex;
-}
-
-/* Track position per active radio (0 = translateX(0), no rule needed) */
-.projects-carousel-wrap:has(#proj-r1:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -1)); }
-.projects-carousel-wrap:has(#proj-r2:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -2)); }
-.projects-carousel-wrap:has(#proj-r3:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -3)); }
-.projects-carousel-wrap:has(#proj-r4:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -4)); }
-.projects-carousel-wrap:has(#proj-r5:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -5)); }
-.projects-carousel-wrap:has(#proj-r6:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -6)); }
-.projects-carousel-wrap:has(#proj-r7:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -7)); }
-.projects-carousel-wrap:has(#proj-r8:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -8)); }
-.projects-carousel-wrap:has(#proj-r9:checked)  .projects-track { transform: translateX(calc(var(--proj-step) * -9)); }
-.projects-carousel-wrap:has(#proj-r10:checked) .projects-track { transform: translateX(calc(var(--proj-step) * -10)); }
-.projects-carousel-wrap:has(#proj-r11:checked) .projects-track { transform: translateX(calc(var(--proj-step) * -11)); }
-.projects-carousel-wrap:has(#proj-r12:checked) .projects-track { transform: translateX(calc(var(--proj-step) * -12)); }
-.projects-carousel-wrap:has(#proj-r13:checked) .projects-track { transform: translateX(calc(var(--proj-step) * -13)); }
-
 /* Arrow button look (restored) */
 .projects-arrow {
+  display: flex;
+  padding: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
